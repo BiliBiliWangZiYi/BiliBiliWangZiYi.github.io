@@ -191,7 +191,7 @@
                 </svg>
             </a>
         </div>
-        <h1 class="title">Github文件及api加速</h1>
+        <h1 class="title">github文件及api加速</h1>
 
         <form onsubmit="toSubmit(event)" class="search-container">
             <input 
@@ -218,13 +218,13 @@
         <div class="example">
             <div class="example-title">📃 合法输入示例：</div>
             <p>📄 分支源码：https://github.com/hunshcn/project/archive/master.zip</p>
-			<p>kkgithub.com加速：https://kkgithub.com/hunshcn/project/xxx/xxx</p>
+            <p>kkgithub.com加速：https://kkgithub.com/hunshcn/project/xxx/xxx</p>
             <p>📁 release源码：https://github.com/hunshcn/project/archive/v0.1.0.tar.gz</p>
             <p>📂 release文件：https://github.com/hunshcn/project/releases/download/v0.1.0/example.zip</p>
             <p>💾 commit文件：https://github.com/hunshcn/project/blob/123/filename</p>
             <p>🖨️ gist：https://gist.githubusercontent.com/cielpy/123/raw/cmd.py</p>
             <p>☁️ api： https://api.github.com/repos/Geekertao/CF-Workers-github-Proxy</p>
-            <p>🌐 GitHub Pages：https://xxx.github.io/your-repo</p>
+            <p>🌐 GitHub Pages：https://xxx.github.io/</p>
         </div>
         <p style="position: sticky;top: calc(100% - 2.5em);">
             由 <a style="color: #1E90FF" href="https://github.com/BiliBiliWangZiYi/CF-Workers-github-Proxy/tree/patch-1" target="_blank">CF-Workers-github-Proxy</a> 
@@ -240,8 +240,9 @@
             const input = document.getElementsByName('q')[0];
             let url = input.value.trim();
             url = url.replace(/kkgithub\.com/gi, 'github.com');
+
             const baseUrl = location.href.substr(0, location.href.lastIndexOf('/') + 1);
-           if (/^https?:\/\//i.test(url)) {
+            if (/^https?:\/\//i.test(url)) {
                 window.open(url);
             } else {
                 window.open(baseUrl + url);
