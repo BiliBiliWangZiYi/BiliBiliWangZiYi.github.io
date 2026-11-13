@@ -24,7 +24,7 @@
       "name": "SideStore (New)",
       "address": "https://new.ani.sidestore.io",
       "kind": 2
-    }
+    },
     {
       "name": "jkcoxson",
       "address": "https://mac-ani.jkcoxson.com",
@@ -110,8 +110,10 @@
       "address": "https://anisette.lillq.me",
       "kind": 2
     },
-  {
+    {
       "name": "windows adi(sidestore)",
       "address": "https://ani2.stikstore.app",
       "kind": 0
     }
+  ]
+}
