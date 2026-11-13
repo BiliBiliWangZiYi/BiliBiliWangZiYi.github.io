@@ -115,6 +115,4 @@
       "name": "windows adi(sidestore)",
       "address": "https://ani2.stikstore.app",
       "kind": 0
-    },
-  "cache": "https://servers.sidestore.io/servers.json.hash"
-}
+    }
